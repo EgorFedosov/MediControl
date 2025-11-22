@@ -1,4 +1,5 @@
 # Backend
-Backend/.idea/**
-Backend/Backend/obj/**
-Backend/Backend/Properties/**
+**/.idea/
+**/obj/
+**/bin/
+**/appsettings.Development.json
