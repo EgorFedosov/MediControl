@@ -5,8 +5,13 @@ namespace Backend.Models.Entities;
 public class Disease
 {
     public Guid Id { get; init; } = Guid.NewGuid();
+
+    [MaxLength(20)]
+    public string Code { get; init; } = string.Empty;
+
     [MaxLength(100)]
     public string Name { get; init; } = string.Empty;
+
     [MaxLength(500)]
     public string Description { get; init; } = string.Empty;
 

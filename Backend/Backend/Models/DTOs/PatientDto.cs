@@ -6,7 +6,9 @@ public class PatientDto
     public string FullName { get; set; }
     public string WorkPlace { get; set; }
     public string Address { get; set; }
+    public DateTime DateOfBirth { get; set; }
     public int Age { get; set; }
     public List<string> Diseases { get; set; } = [];
     public string DoctorName { get; set; }
+    public Guid DoctorId { get; set; }
 }
