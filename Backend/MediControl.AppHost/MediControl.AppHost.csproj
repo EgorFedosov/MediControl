@@ -21,4 +21,8 @@
     <ProjectReference Include="..\Backend\Backend.csproj" />
   </ItemGroup>
 
+  <Target Name="RestoreFrontendDependencies" BeforeTargets="Run">
+    <Exec Command="npm install" WorkingDirectory="..\Frontend\vite" />
+  </Target>
+
 </Project>
