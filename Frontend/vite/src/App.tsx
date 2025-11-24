@@ -107,12 +107,7 @@ export default function App() {
       };
 
       await updatePatient(currentPatient.id, payload);
-
-      setPatients((prev) =>
-        prev.map((p) =>
-          p.id === currentPatient.id ? { ...currentPatient, ...payload } : p
-        )
-      );
+      await loadData();
 
       onCloseDrawer();
       message.success("Данные сохранены");
